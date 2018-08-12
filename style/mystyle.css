@@ -1,3 +1,9 @@
+.body{
+
+	font-size: 40px;
+}
+
+
 
 .allcontain{
 	max-width: 1366px;
@@ -13,9 +19,9 @@
 }
 
 
-	img {
-		width: 100%;
-	}
+img {
+	width: 100%;
+}
 
 .logreg{
 	list-style-type: none;
@@ -107,10 +113,7 @@
 	padding-top: 17px;
 	height:69px; 
 }
-@font-face {
-	font-family: "BebasNeue Regular";
-	src: url(../source/fonts/BebasNeue-Regular.otf) format("truetype");
-}
+
 #navbarontop > li > a {
 	font-family: 'BebasNeue Regular';
 	font-size: 17px;
@@ -161,6 +164,7 @@
 .navbar-default .toggle-costume:hover .icon-bar {
 	background-color: #fff;
 }
+
 #navbarontop .open > a,
 #navbarontop .open > a:hover,
 #navbarontop .open > a:focus {
@@ -171,9 +175,21 @@
 	outline: none;
 	border-bottom: 2px solid #C59E47; 
 }
-.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+
+.dropdown-menu {
+	font-size: 1.5rem;
+}
+.dropdown-menu>li>a{
+	font-size: 1.5rem;
+}
+
+
+
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
 	font-family: 'BebasNeue Regular';
-	font-size: 13pt;
+	font-size: 1.5rem;
+	
 	color: #000;
 	background-color: rgba(255,255,255,.5);
 	text-align: center;
@@ -185,7 +201,10 @@
 .dropdown.open .dropdown-menu {
 	max-height: 200px;
 	opacity: 1;
+
 }
+
+
 
 /*----------------- Navbar On Top Media screen -------------*/
 @media screen and (min-width: 320px) and (max-width: 480px){
@@ -297,25 +316,24 @@
 /*------------------------- Start home page sliding image --------------------*/
 
 
-@font-face{
-	font-family: "OpenSans Semibold";
-	src: url(../source/fonts/OpenSans-Semibold.ttf) format("truetype");
-
-}
 .carousel-caption{
 	z-index: 999;
 }
+
+.carousel-caption>h1 {
+	font-size: 4rem;
+	color: #000000;
+	text-align: left;
+}
+
 .carousel-caption>h2{
 	text-align: left;
 	font-family: 'OpenSans Semibold';
-	font-size: 25.12pt;
+	font-size: 1.5rem;
 	text-shadow: 0 0px 0px rgba(0, 0, 0, .0);
 
 }
-@font-face{
-	font-family: "OpenSans Regular";
-	src:url(../source/fonts/OpenSans-Regular.ttf) format("truetype");
-}
+
 .carousel-caption>h2>p{
 	font-family: :'OpenSans Regular';
 	font-size: 15.88pt;
@@ -342,11 +360,13 @@
 }
 
 
+
 /* ______________CSS for search box_________________ */
 
 
 .box{
-	margin-top: 20px;
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
 
 
@@ -366,8 +386,7 @@
 /* Form wrapper styling */
 .search-wrapper {
 
-  
-
+	height: 20px;
 	width: 220px;
 	margin: 45px auto 50px auto;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .2);
@@ -377,10 +396,12 @@
 
 .search-wrapper input {
 	width: 138px;
-	height: 10px;
+	height: 30px;
+
+	
 	padding: 10px 5px;
 	float: left;
-	font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+	font: bold 17px 'lucida sans', 'trebuchet MS', 'Tahoma';
 	border: 0;
 	background: #EEE;
 	border-radius: 3px 0 0 3px;
@@ -438,15 +459,6 @@
 	outline: 0;   
 }
 
-.search-wrapper button:before { /* left arrow */
-	content: '';
-	position: absolute;
-	border-width: 8px 8px 8px 0;
-	border-style: solid solid solid none;
-	border-color: transparent #d83c3c transparent;
-	top: 12px;
-	left: -6px;
-}
 
 .search-wrapper button:hover:before{
 	border-right-color: #e54040;
@@ -497,6 +509,9 @@
 		-webkit-box-sizing: content-box;
 		font-family: inherit;
 		font-size: 100%;
+		line-height: 20px;
+
+
 	}
 	input::-webkit-search-decoration,
 	input::-webkit-search-cancel-button {
@@ -505,11 +520,11 @@
 
 
 	input[type=search] {
-		background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+		background: #ededed url("../images/search-icon.png") no-repeat 9px center;
 		border: solid 1px #ccc;
-		padding: 9px 10px 9px 32px;
-		width: 55px;
-
+		padding: 3.5px 10px 3.5px 32px;
+		width: 270px;
+		font-size: 15px;
 		-webkit-border-radius: 10em;
 		-moz-border-radius: 10em;
 		border-radius: 10em;
@@ -518,8 +533,9 @@
 		-moz-transition: all .5s;
 		transition: all .5s;
 	}
+
 	input[type=search]:focus {
-		width: 130px;
+		width: 300px;
 		background-color: #fff;
 		border-color: #66CC75;
 
@@ -569,7 +585,7 @@
 
 
 
-	.dummy_page {
+	.footer_spacing {
 		height: 400px;
 		width: 100%;
 		background-color: #ffffff;
@@ -586,10 +602,12 @@
 		background-color: #070617; 
 
 	}
+
 	.footer .col {
 		width: 190px;
 		height: auto;
 		float: left;
+
 		box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -842,3 +860,5 @@
 		opacity: 1;
 		max-height: 200px;
 	}
+
+

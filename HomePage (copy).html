@@ -13,30 +13,24 @@
 	<title>GA Sports</title>
 
 	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-
-
-	<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
-	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/slider.css">
 	<link rel="stylesheet" type="text/css" href="style/mystyle.css">
 	<link rel="stylesheet" type="text/css" href="style/signup.css">
 	<script src="style/signup.js"></script>
-
-
-
-
 	<!-- favicon Icon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/logo.png" type="image/x-icon">
 
 
-
-	<!--   _______________  -->
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>  
+	<!-- CSS Plugins -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 
 
 </head>
@@ -64,20 +58,20 @@
 
 
 
-				<header >
-
-					<nav class="main-nav">
-						<ul>
-
-							<a class="cd-signin" href="#0">Sign in</a>
-							<!--  <li><a class="cd-signup" href="#0">Sign up</a></li>  -->
-						</ul>
-					</nav>
-				</header>
-
-
+    <header >
+       
+        <nav class="main-nav">
+            <ul>
+               
+              <a class="cd-signin" href="#0">Sign in</a>
+               <!--  <li><a class="cd-signup" href="#0">Sign up</a></li>  -->
+            </ul>
+        </nav>
+    </header>
 
 
+
+			
 			</div>
 		</div>
 
@@ -88,7 +82,7 @@
 
 
 
-	<!-- ___________________ Sign up and login Code ___________________________________ -->
+<!-- ___________________ Sign up and login Code ___________________________________ -->
 
 
 
@@ -104,13 +98,13 @@
 				<form class="cd-form">
 					<p class="fieldset  ">
 						<label class="image-replace cd-email" for="signin-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signin-email" type="Email" required="" placeholder="E-mail">
-						<span class="cd-error-message">Please enter valid Email</span>  
+						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Please enter valid Email</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signin-password">Password</label>
-						<input class="full-width has-padding has-border" id="signin-password" type="text" required="" placeholder="Password">
+						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">Please enter Password</span>
 					</p>
@@ -133,21 +127,19 @@
 				<form class="cd-form">
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signup-username">Username</label>
-						<input class="full-width has-padding has-border" id="signup-username" type="text"  required="" placeholder="Username">
+						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
 						<span class="cd-error-message">Please enter User Name</span>
 					</p>
 
 					<p class="fieldset">
-						
 						<label class="image-replace cd-email" for="signup-email">E-mail</label>
 						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
-						<span class="cd-error-message">Enter Valid Email</span>
-
+						<span class="cd-error-message">Please enter valid Email</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signup-password">Password</label>
-						<input class="full-width has-padding has-border" id="signup-password" type="text" required=""  placeholder="Password">
+						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
 						<a href="#0" class="hide-password">Hide</a>
 						<span class="cd-error-message">Please enter Password</span>
 					</p>
@@ -161,7 +153,6 @@
 						<input class="full-width has-padding" type="submit" value="Create account">
 					</p>
 				</form>
-
 
 				<!-- <a href="#0" class="cd-close-form">Close</a> -->
 			</div> <!-- cd-signup -->
@@ -189,11 +180,15 @@
 
 
 
-	<!-- ____________________________ -->
+<!-- ____________________________ -->
 
 
 
 	<body>
+
+
+
+
 
 
 		<nav class="topnavbar navbar-default topnav">
@@ -214,7 +209,7 @@
 					
 
 					<li class="dropdown">
-						<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category1 <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category1 <span class="caret"></span></a>
 						<ul class="dropdown-menu dropdowncostume">
 							<li><a href="#">1</a></li>
 							<li><a href="#">2</a></li>
@@ -224,7 +219,7 @@
 
 
 					<li class="dropdown">
-						<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category2 <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category2 <span class="caret"></span></a>
 						<ul class="dropdown-menu dropdowncostume">
 							<li><a href="#">1</a></li>
 							<li><a href="#">2</a></li>
@@ -234,7 +229,7 @@
 
 
 					<li class="dropdown">
-						<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category3 <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category3 <span class="caret"></span></a>
 						<ul class="dropdown-menu dropdowncostume">
 							<li><a href="#">1</a></li>
 							<li><a href="#">2</a></li>
@@ -243,7 +238,7 @@
 					</li>
 
 					<li class="dropdown">
-						<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category4 <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category4 <span class="caret"></span></a>
 						<ul class="dropdown-menu dropdowncostume">
 							<li><a href="#">1</a></li>
 							<li><a href="#">2</a></li>
@@ -262,7 +257,7 @@
 
 
 	<!-- _________________________________________________--> 
- 
+
 
 
 
@@ -279,8 +274,8 @@
 				<div class="carousel-item active">
 					<img src="images/SliderImage/Background1.jpg" alt="Backgroundimg1">
 					<div class="carousel-caption">
-						<h1 >GA Sports</h1>
-						<h2>About GA Sports </h2>
+						<h1>GA Sports</h1>
+						<p>About GA Sports </p>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -288,14 +283,14 @@
 
 					<div class="carousel-caption">
 						<h1>GA Sports</h1>
-						<h2>About GA Sports </h2>
+						<p>About GA Sports </p>
 					</div>
 				</div>
 				<div class="carousel-item">
 					<img src="images/SliderImage/Background1.jpg" alt="Backgroundimg3" >
 					<div class="carousel-caption">
 						<h1>GA Sports</h1>
-						<h2>About GA Sports </h2>
+						<p>About GA Sports </p>
 					</div>
 				</div>
 			</div>
@@ -318,37 +313,13 @@
 
 	<!-- ____________________Featured Section ______________________________--> 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<!-- _________________feature ___________________________________ -->
 
 
-	<div class="row">
+	<div class="footer_spacing">
+		&nbsp;<br />
+		&nbsp;<br />
+
 
 		<div class="featureWrap" >
 
@@ -367,65 +338,12 @@
 
 		</div>
 
+		&nbsp;<br />
+		
+
+
 
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<!--  Featured section  -->>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -437,62 +355,62 @@
 
 
 
-	<div class="row">
 
 
-		<div class="footer">
 
-			<div class="footer_spacing">
-				&nbsp;<br />
-				&nbsp;<br />
-			</div>
-			<div class="contain">
-				<div class="col-md-10 col-lg-10 col-sm-10 col-xs-10" >
-					<div class="col">
-						<h1> &nbsp;	 </h1>
-						<ul>
-							<li>BECOME A MEMBER</li>
-							<li>SITE FEEDBACK</li>
+	<div class="footer">
 
-						</ul>
-					</div>
-					<div class="col">
-						<h1>GET HELP</h1>
-						<ul>
-							<li>Order Status</li>
-							<li>Delivery</li>
-							<li>Returns</li>
-							<li>Payment Option</li>
-							<li>Get in touch</li>
-						</ul>
-					</div>
-					<div class="col">
-						<h1>About GA Sports</h1>
-						<ul>
-							<li>News</li>
-							<li>Career</li>
-
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2" >
-					<div class="col social">
-						<h1>Social</h1>
-						<ul>
-							<li><img src="images/SocialMedia_Image/facebook_icon.svg" width="32" style="width: 32px;"></li>
-							<li><img src="images/SocialMedia_Image/twitter_icon.svg" width="32" style="width: 32px;"></li>
-							<li><img src="images/SocialMedia_Image/pininterest_icon.svg" width="32" style="width: 32px;"></li>
-						</ul>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
+		<div class="footer_spacing">
+			&nbsp;<br />
+			&nbsp;<br />
 		</div>
-		<!-- END OF FOOTER -->
+		<div class="contain">
+			<div class="col-md-10 col-lg-10 col-sm-10 col-xs-10" >
+				<div class="col">
+					<h1> &nbsp;	 </h1>
+					<ul>
+						<li>BECOME A MEMBER</li>
+						<li>SITE FEEDBACK</li>
 
+					</ul>
+				</div>
+				<div class="col">
+					<h1>GET HELP</h1>
+					<ul>
+						<li>Order Status</li>
+						<li>Delivery</li>
+						<li>Returns</li>
+						<li>Payment Option</li>
+						<li>Get in touch</li>
+					</ul>
+				</div>
+				<div class="col">
+					<h1>About GA Sports</h1>
+					<ul>
+						<li>News</li>
+						<li>Career</li>
 
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2" >
+				<div class="col social">
+					<h1>Social</h1>
+					<ul>
+						<li><img src="images/facebook_icon.svg" width="32" style="width: 32px;"></li>
+						<li><img src="images/twitter_icon.svg" width="32" style="width: 32px;"></li>
+						<li><img src="images/pininterest_icon.svg" width="32" style="width: 32px;"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
 	</div>
+	<!-- END OF FOOTER -->
+
+
+
 
 
 
