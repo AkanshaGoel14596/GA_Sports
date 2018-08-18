@@ -1,0 +1,798 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1,user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>GA Sports</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="style/mystyle.css">
+	<link rel="stylesheet" type="text/css" href="style/signup.css">
+	<script src="style/signup.js"></script>
+
+
+
+	<!-- favicon Icon -->
+	<link rel="icon" href="images/logo.png" type="image/x-icon">
+
+	<!--   _______________  -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>  
+
+
+</head>
+
+
+<div class="allcontain">
+	<div class="header">
+		<div class="row">
+
+			<div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+			</div>
+
+			<div class="col-md-2 col-lg-3 col-sm-2 col-xs-2">
+				<div class="box">
+					<input class="search" type="search" placeholder="Search" />
+					<div class="icon"></div>  
+				</div>
+			</div>
+
+			<div class="col-md-3 col-lg-3 col-sm-3 col-xs-3">
+			</div>
+
+			<div class="col-md-4 col-lg-3 col-sm-4 col-xs-4" >
+				
+
+
+
+				<header >
+
+					<nav class="main-nav">
+						<ul>
+
+							<a class="cd-signin" href="#0">Sign in</a>
+							<!--  <li><a class="cd-signup" href="#0">Sign up</a></li>  -->
+						</ul>
+					</nav>
+				</header>
+
+			</div>
+		</div>
+
+
+	</div>
+
+</div>
+
+
+
+<!-- ___________________ Sign up and login Code ___________________________________ -->
+
+
+
+
+<div class="cd-user-modal"> 
+	<div class="cd-user-modal-container"> 
+		<ul class="cd-switcher">
+			<li><a href="#0">Sign in</a></li>
+			<li><a href="#0">New account</a></li>
+		</ul>
+
+		<div id="cd-login"> <!-- log in form -->
+			<form class="cd-form">
+				<p class="fieldset  ">
+					<label class="image-replace cd-email" for="signin-email">E-mail</label>
+					<input class="full-width has-padding has-border" id="signin-email" type="Email" required="" placeholder="E-mail">
+					<span class="cd-error-message">Please enter valid Email</span>  
+				</p>
+
+				<p class="fieldset">
+					<label class="image-replace cd-password" for="signin-password">Password</label>
+					<input class="full-width has-padding has-border" id="signin-password" type="text" required="" placeholder="Password">
+					<a href="#0" class="hide-password">Hide</a>
+					<span class="cd-error-message">Please enter Password</span>
+				</p>
+
+				<p class="fieldset">
+					<input type="checkbox" id="remember-me" checked>
+					<label for="remember-me">Remember me</label>
+				</p>
+
+				<p class="fieldset">
+					<input class="full-width" type="submit" value="Login">
+				</p>
+			</form>
+
+			<p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+			<!-- <a href="#0" class="cd-close-form">Close</a> -->
+		</div> <!-- cd-login -->
+
+		<div id="cd-signup"> <!-- sign up form -->
+			<form class="cd-form">
+				<p class="fieldset">
+					<label class="image-replace cd-username" for="signup-username">Username</label>
+					<input class="full-width has-padding has-border" id="signup-username" type="text"  required="" placeholder="Username">
+					<span class="cd-error-message">Please enter User Name</span>
+				</p>
+
+				<p class="fieldset">
+
+					<label class="image-replace cd-email" for="signup-email">E-mail</label>
+					<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+					<span class="cd-error-message">Enter Valid Email</span>
+
+				</p>
+
+				<p class="fieldset">
+					<label class="image-replace cd-password" for="signup-password">Password</label>
+					<input class="full-width has-padding has-border" id="signup-password" type="text" required=""  placeholder="Password">
+					<a href="#0" class="hide-password">Hide</a>
+					<span class="cd-error-message">Please enter Password</span>
+				</p>
+
+				<p class="fieldset">
+					<input type="checkbox" id="accept-terms">
+					<label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+				</p>
+
+				<p class="fieldset">
+					<input class="full-width has-padding" type="submit" value="Create account">
+				</p>
+			</form>
+
+
+			<!-- <a href="#0" class="cd-close-form">Close</a> -->
+		</div> <!-- cd-signup -->
+
+		<div id="cd-reset-password"> <!-- reset password form -->
+			<p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+			<form class="cd-form">
+				<p class="fieldset">
+					<label class="image-replace cd-email" for="reset-email">E-mail</label>
+					<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+					<span class="cd-error-message">Error message here!</span>
+				</p>
+
+				<p class="fieldset">
+					<input class="full-width has-padding" type="submit" value="Reset password">
+				</p>
+			</form>
+
+			<p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+		</div> <!-- cd-reset-password -->
+		<a href="#0" class="cd-close-form">Close</a>
+	</div> <!-- cd-user-modal-container -->
+</div> <!-- cd-user-modal -->
+
+
+<!--   _____________Body _____________________  -->
+
+<body style="background-color: #E5e4e2;">
+	
+
+
+
+	<nav class="topnavbar navbar-default topnav">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed toggle-costume" data-toggle="collapse" data-target="#upmenu" aria-expanded="false">
+					<span class="sr-only"> Toggle navigaion</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand logo" href="#"><img src="images/logo.png" alt="logo"></a>
+			</div>	 
+		</div>
+		<div class="collapse navbar-collapse" id="upmenu">
+			<ul class="nav navbar-nav" id="navbarontop">
+
+
+
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category1 <span class="caret"></span></a>
+					<ul class="dropdown-menu dropdowncostume">
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+					</ul>
+				</li>
+
+
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category2 <span class="caret"></span></a>
+					<ul class="dropdown-menu dropdowncostume">
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+					</ul>
+				</li>
+
+
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category3 <span class="caret"></span></a>
+					<ul class="dropdown-menu dropdowncostume">
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+					</ul>
+				</li>
+
+				<li class="dropdown">
+					<a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category4 <span class="caret"></span></a>
+					<ul class="dropdown-menu dropdowncostume">
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+					</ul>
+				</li>
+
+
+
+
+			</ul>
+		</div>
+	</nav>
+
+
+
+
+
+
+
+	<!--      Products         -->
+
+
+
+
+
+
+	<div class="wrapper">
+
+		<div class="row">
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+
+				<!-- Filters code start  -->
+
+				<br style = "line-height:135px;">
+
+
+
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" href="#filter1">
+									Filter
+								</a>
+								<a class="pull-right" data-toggle="collapse" href="#filter1">
+									<span class="glyphicon glyphicon-filter"></span>
+								</a>
+							</h4>
+						</div>
+						<div id="filter1" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="filter-setting">
+									<form action="" mathod="GET">
+										<label>Price Range</label>
+										<a class="pull-right collapsed-icon-toggle" href="#coll-0" data-toggle="collapse">
+											<span class="glyphicon glyphicon-minus on-opened"></span>
+											<span class="glyphicon glyphicon-plus on-closed"></span>
+										</a>
+										<br/>
+										<div id="coll-0" class="collapse in">
+
+											<input type="text" placeholder="150"/> 
+											to 
+											<input type="text" placeholder="10000"/>
+										</div>
+										<hr class="line"/>
+										<label>Filter 1</label>
+										<a class="pull-right collapsed-icon-toggle" href="#coll-1" data-toggle="collapse">
+											<span class="glyphicon glyphicon-minus on-opened"></span> 
+											<span class="glyphicon glyphicon-plus on-closed"></span>  
+										</a>
+										<br/>
+										<div id="coll-1" class="collapse in">
+											<div class="padding-v-xs" data-toggle="buttons">
+												<label class="btn btn-default btn-xs ico">
+													<input type="checkbox" name="" onclick="" value="" autocomplete="off"/>
+													<span class="icon glyphicon glyphicon-ok"></span>
+												</label>
+												<span>Filter a</span>
+											</div>
+											<div class="padding-v-xs" data-toggle="buttons">
+												<label class="btn btn-default btn-xs ico">
+													<input type="checkbox" name=""
+													value="" autocomplete="off"/>
+													<span class="icon glyphicon glyphicon-ok"></span>
+												</label>
+												<span>Filter a</span>
+											</div>
+											<div class="padding-v-xs" data-toggle="buttons">
+												<label class="btn btn-default btn-xs ico">
+													<input type="checkbox" name=""
+													value="" autocomplete="off"/>
+													<span class="icon glyphicon glyphicon-ok"></span>
+												</label>
+												<span>Filter a</span>
+											</div>
+											<div class="padding-v-xs" data-toggle="buttons">
+												<label class="btn btn-default btn-xs ico">
+													<input type="checkbox" name=""
+													value="" autocomplete="off"/>
+													<span class="icon glyphicon glyphicon-ok"></span>
+												</label>
+												<span>Filter a</span>
+											</div>
+										</div>
+										<hr class="line"/>
+										<label>Filter 2</label>
+										<a class="pull-right collapsed-icon-toggle" href="#coll-2" data-toggle="collapse">
+											<span class="glyphicon glyphicon-minus on-opened"></span>
+											<span class="glyphicon glyphicon-plus on-closed"></span>
+										</a>
+										<br/>
+										<div id="coll-2" class="scroll-v-250px collapse in">
+											<div class="padding-v-xs" data-toggle="buttons">
+												<label class="btn btn-default btn-xs ico">
+													<input type="checkbox" name=""
+													value="" autocomplete="off"/>
+													<span class="icon glyphicon glyphicon-ok"></span>
+												</label>
+												<span>Filter a</span>
+											</div>
+											<div class="padding-v-xs" data-toggle="buttons">
+												<label class="btn btn-default btn-xs ico">
+													<input type="checkbox" name=""
+													value="" autocomplete="off"/>
+													<span class="icon glyphicon glyphicon-ok"></span>
+												</label>
+												<span>Filter a</span>
+											</div>
+											<div class="padding-v-xs" data-toggle="buttons">
+												<label class="btn btn-default btn-xs ico">
+													<input type="checkbox" name=""
+													value="" autocomplete="off"/>
+													<span class="icon glyphicon glyphicon-ok"></span>
+												</label>
+												<span>Filter a</span>
+											</div>
+											<div class="padding-v-xs" data-toggle="buttons">
+												<label class="btn btn-default btn-xs ico">
+													<input type="checkbox" name=""
+													value="" autocomplete="off"/>
+													<span class="icon glyphicon glyphicon-ok"></span>
+												</label>
+												<span>Filter a</span>
+											</div>
+
+
+										</div>
+										<hr class="line"/>
+										<label>Filter 3</label>
+										<a class="pull-right collapsed-icon-toggle" href="#coll-3" data-toggle="collapse">
+											<span class="glyphicon glyphicon-minus on-opened"></span>
+											<span class="glyphicon glyphicon-plus on-closed"></span>
+										</a>
+										<br/>
+										<div id="coll-3" class="scroll-v-250px collapse in">
+											<div class="padding-v-xs" data-toggle="buttons">
+												<label class="btn btn-default btn-xs ico">
+													<input type="checkbox" name=""
+													value="" autocomplete="off"/>
+													<span class="icon glyphicon glyphicon-ok"></span>
+												</label>
+												<span>Filter a</span>
+											</div>
+										</div>
+										<hr class="line"/>
+										<label>Filter 4</label>
+										<a class="pull-right collapsed-icon-toggle" href="#coll-4" data-toggle="collapse">
+											<span class="glyphicon glyphicon-minus on-opened"></span>
+											<span class="glyphicon glyphicon-plus on-closed"></span>
+										</a>
+										<br/>
+										<div id="coll-4" class="scroll-v-250px collapse in">
+											<div class="padding-v-xs" data-toggle="buttons">
+												<label class="btn btn-default btn-xs ico">
+													<input type="checkbox" name=""
+													value="" autocomplete="off"/>
+													<span class="icon glyphicon glyphicon-ok"></span>
+												</label>
+												<span>Filter a</span>
+											</div>
+										</div>
+										<hr class="line"/>
+										<button type="submit" class="btn btn-block btn-success">
+											<span class="glyphicon glyphicon-search"></span>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+				<!-- Filters code End    -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+
+				<div class="row">
+					<div class="col-xs-2 col-sm-2 col-md-4 col-lg-4">
+						<div class="desc">
+
+							<h1>Title</h1>
+
+						</div>
+					</div>
+					<div class="col-xs-0 col-sm-0 col-md-5 col-lg-6">
+					</div>
+
+					<div class="col-xs-10 col-sm-10 col-md-3 col-lg-2">
+						<h3><label for="Option">Sort By</h3>
+						<div class="select-style">
+							<select>
+								<option value="opt1">Option 1</option>
+								<option value="opt2">Option 2</option>
+								<option value="opt3">Option 3</option>
+								<option value="opt4">Option 4</option>
+							</select>
+						</div>
+					</label>
+				</div>
+			</div>
+			<hr width="100%">
+
+			<div class="content">
+				<!-- content here -->
+				<div class="product-grid product-grid--flexbox">
+					<div class="product-grid__wrapper">
+						<!-- Product list start here -->
+
+						<!-- Single product -->
+						<div class="product-grid__product-wrapper">
+							<div class="product-grid__product">
+								<div class="product-grid__img-wrapper">			
+									<img src="images/FeaturedImage/Image1.jpg" alt="Img" class="product-grid__img" />
+								</div>
+								<span class="product-grid__title">Product title</span>
+								<span class="product-grid__price">1.399€</span>
+								<div class="product-grid__extend-wrapper">
+									<div class="product-grid__extend">
+										<p class="product-grid__description">Thrax Upper Cut Batting Gloves Left Hand White and Blue.</p>
+										<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+										<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end Single product -->
+
+						<div class="product-grid__product-wrapper">
+							<div class="product-grid__product">
+								<div class="product-grid__img-wrapper">			
+									<img src="images/FeaturedImage/Image2.jpg" alt="Img" class="product-grid__img" />
+								</div>
+								<span class="product-grid__title">Product title</span>
+								<span class="product-grid__price">1.399€</span>
+								<div class="product-grid__extend-wrapper">
+									<div class="product-grid__extend">
+										<p class="product-grid__description">Thrax Upper Cut Batting Gloves Left Hand White and Blue.</p>
+										<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+										<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-grid__product-wrapper">
+							<div class="product-grid__product">
+								<div class="product-grid__img-wrapper">			
+									<img src="images/FeaturedImage/Image3.jpg" alt="Img" class="product-grid__img" />
+								</div>
+								<span class="product-grid__title">Product title</span>
+								<span class="product-grid__price">1.399€</span>
+								<div class="product-grid__extend-wrapper">
+									<div class="product-grid__extend">
+										<p class="product-grid__description">Thrax Upper Cut Batting Gloves Left Hand White and Blue.</p>
+										<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+										<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-grid__product-wrapper">
+							<div class="product-grid__product">
+								<div class="product-grid__img-wrapper">			
+									<img src="images/FeaturedImage/Image4.jpg" alt="Img" class="product-grid__img" />
+								</div>
+								<span class="product-grid__title">Product title</span>
+								<span class="product-grid__price">1.399€</span>
+								<div class="product-grid__extend-wrapper">
+									<div class="product-grid__extend">
+										<p class="product-grid__description">Thrax Upper Cut Batting Gloves Left Hand White and Blue.</p>
+										<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+										<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-grid__product-wrapper">
+							<div class="product-grid__product">
+								<div class="product-grid__img-wrapper">			
+									<img src="images/FeaturedImage/Image5.jpg" alt="Img" class="product-grid__img" />
+								</div>
+								<span class="product-grid__title">Product title</span>
+								<span class="product-grid__price">1.399€</span>
+								<div class="product-grid__extend-wrapper">
+									<div class="product-grid__extend">
+										<p class="product-grid__description">Thrax Upper Cut Batting Gloves Left Hand White and Blue.</p>
+										<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+										<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-grid__product-wrapper">
+							<div class="product-grid__product">
+								<div class="product-grid__img-wrapper">			
+									<img src="images/FeaturedImage/Image6.jpg" alt="Img" class="product-grid__img" />
+								</div>
+								<span class="product-grid__title">Product title</span>
+								<span class="product-grid__price">1.399€</span>
+								<div class="product-grid__extend-wrapper">
+									<div class="product-grid__extend">
+										<p class="product-grid__description">Thrax Upper Cut Batting Gloves Left Hand White and Blue.</p>
+										<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+										<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-grid__product-wrapper">
+							<div class="product-grid__product">
+								<div class="product-grid__img-wrapper">			
+									<img src="images/FeaturedImage/Image7.jpg" alt="Img" class="product-grid__img" />
+								</div>
+								<span class="product-grid__title">Product title</span>
+								<span class="product-grid__price">1.399€</span>
+								<div class="product-grid__extend-wrapper">
+									<div class="product-grid__extend">
+										<p class="product-grid__description">Thrax Upper Cut Batting Gloves Left Hand White and Blue.</p>
+										<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+										<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-grid__product-wrapper">
+							<div class="product-grid__product">
+								<div class="product-grid__img-wrapper">			
+									<img src="images/FeaturedImage/Image8.jpg" alt="Img" class="product-grid__img" />
+								</div>
+								<span class="product-grid__title">Product title</span>
+								<span class="product-grid__price">1.399€</span>
+								<div class="product-grid__extend-wrapper">
+									<div class="product-grid__extend">
+										<p class="product-grid__description">Thrax Upper Cut Batting Gloves Left Hand White and Blue.</p>
+										<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+										<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-grid__product-wrapper">
+							<div class="product-grid__product">
+								<div class="product-grid__img-wrapper">			
+									<img src="images/FeaturedImage/Image1.jpg" alt="Img" class="product-grid__img" />
+								</div>
+								<span class="product-grid__title">Product title</span>
+								<span class="product-grid__price">1.399€</span>
+								<div class="product-grid__extend-wrapper">
+									<div class="product-grid__extend">
+										<p class="product-grid__description">Thrax Upper Cut Batting Gloves Left Hand White and Blue.</p>
+										<span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>				
+										<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER START -->
+
+
+
+
+<div class="row">
+
+
+	<div class="footer">
+
+		<div class="footer_spacing">
+			&nbsp;<br />
+			&nbsp;<br />
+		</div>
+		<div class="contain">
+			<div class="col-md-10 col-lg-10 col-sm-10 col-xs-10" >
+				<div class="col">
+					<h1> &nbsp;	 </h1>
+					<ul>
+						<li>BECOME A MEMBER</li>
+						<li>SITE FEEDBACK</li>
+
+					</ul>
+				</div>
+				<div class="col">
+					<h1>GET HELP</h1>
+					<ul>
+						<li>Order Status</li>
+						<li>Delivery</li>
+						<li>Returns</li>
+						<li>Payment Option</li>
+						<li>Get in touch</li>
+					</ul>
+				</div>
+				<div class="col">
+					<h1>About GA Sports</h1>
+					<ul>
+						<li>News</li>
+						<li>Career</li>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-2 col-lg-2 col-sm-2 col-xs-2" >
+				<div class="col social">
+					<h1>Social</h1>
+					<ul>
+						<li><img src="images/SocialMedia_Image/facebook_icon.svg" width="32" style="width: 32px;"></li>
+						<li><img src="images/SocialMedia_Image/twitter_icon.svg" width="32" style="width: 32px;"></li>
+						<li><img src="images/SocialMedia_Image/pininterest_icon.svg" width="32" style="width: 32px;"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+
+</div>
+
+<!-- END OF FOOTER -->
+
+
+
+
+
+
+</body>
+</html>
