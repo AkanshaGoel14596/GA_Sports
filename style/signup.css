@@ -30,27 +30,8 @@ Main components
   border-top: 1px solid #3b3d4b;
   color: #FFF;
 }
-@media only screen and (min-width: 768px) {
-  
-  .main-nav ul {
-      font-size: 1.5rem;
 
-    margin-top: 3px;
-    margin-bottom: 3px;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    
-  }
-  .main-nav ul.is-visible {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-  }
+  
  
   .main-nav a {
     display: inline-block;
@@ -68,7 +49,7 @@ Main components
     background: #2f889a;
     border: none;
   }
-}
+
 
 /* -------------------------------- 
 

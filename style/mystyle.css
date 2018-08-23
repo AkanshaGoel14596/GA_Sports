@@ -3,12 +3,12 @@
 	font-size: 40px;
 }
 
-
-.allcontain{
-	max-width: 1366px;
-	margin-left: auto;
-	margin-right: auto;
+#myListView.k-widget, #catalog-items.k-widget * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
+
 .header{
 	background-color: #191919;
 	
@@ -369,145 +369,6 @@ img {
 }
 
 
-.cf:before, .cf:after{
-	content:"";
-	display:table;
-}
-
-.cf:after{
-	clear:both;
-}
-
-.cf{
-	zoom:2;
-}    
-
-/* Form wrapper styling */
-
-
-
-
-
-.search-wrapper {
-
-	height: 20px;
-	width: 220px;
-	margin: 45px auto 50px auto;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .2);
-}
-
-/* Form text input */
-
-.search-wrapper input {
-	width: 138px;
-	height: 30px;
-
-	
-	padding: 10px 5px;
-	float: left;
-	font: bold 17px 'lucida sans', 'trebuchet MS', 'Tahoma';
-	border: 0;
-	background: #EEE;
-	border-radius: 3px 0 0 3px;
-}
-
-.search-wrapper input:focus {
-	outline: 0;
-	background: #fff;
-	box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
-}
-
-.search-wrapper input::-webkit-input-placeholder {
-	color: #999;
-	font-weight: normal;
-	font-style: italic;
-}
-
-.search-wrapper input:-moz-placeholder {
-	color: #999;
-	font-weight: normal;
-	font-style: italic;
-}
-
-.search-wrapper input:-ms-input-placeholder {
-	color: #999;
-	font-weight: normal;
-	font-style: italic;
-}    
-
-/* Form submit button */
-.search-wrapper button {
-	overflow: visible;
-	position: relative;
-	float: right;
-	border: 0;
-	padding: 0;
-	cursor: pointer;
-	height: 20px;
-	width: 72px;
-	font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
-	color: white;
-	text-transform: uppercase;
-	background: #D83C3C;
-	border-radius: 0 3px 3px 0;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
-}
-
-.search-wrapper button:hover{     
-	background: #e54040;
-}   
-
-.search-wrapper button:active,
-.search-wrapper button:focus{   
-	background: #c42f2f;
-	outline: 0;   
-}
-
-
-.search-wrapper button:hover:before{
-	border-right-color: #e54040;
-}
-
-.search-wrapper button:focus:before,
-.search-wrapper button:active:before{
-	border-right-color: #c42f2f;
-}      
-
-.search-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
-	border: 0;
-	padding: 0;
-}    
-
-
-body{
-	background-color: #E5E4E2;
-}
-
-
-/*body {
-	background: #fff;
-	color: #666;
-	font: 90%/180% Arial, Helvetica, sans-serif;
-	width: 800px;
-	max-width: 96%;
-	margin: 0 auto;
-	}*/
-	a {
-		color: #69C;
-		text-decoration: none;
-	}
-	a:hover {
-		color: #F60;
-	}
-	h1 {
-		font: 1.7em;
-		line-height: 110%;
-		color: #000;
-	}
-	p {
-		margin: 0 0 20px;
-	}
-
 
 	input {
 		outline: none;
@@ -518,8 +379,6 @@ body{
 		font-family: inherit;
 		font-size: 100%;
 		line-height: 20px;
-
-
 	}
 	input::-webkit-search-decoration,
 	input::-webkit-search-cancel-button {
@@ -530,8 +389,8 @@ body{
 	input[type=search] {
 		background: #ededed url("../images/search-icon.png") no-repeat 9px center;
 		border: solid 1px #ccc;
-		padding: 3.5px 10px 3.5px 32px;
-		width: 270px;
+		padding: 1% 10% 1% 8%;
+		width: 100%;
 		font-size: 15px;
 		-webkit-border-radius: 10em;
 		-moz-border-radius: 10em;
@@ -543,7 +402,7 @@ body{
 	}
 
 	input[type=search]:focus {
-		width: 300px;
+		width: 130%;
 		background-color: #fff;
 		border-color: #66CC75;
 
@@ -560,30 +419,7 @@ body{
 		color: #999;
 	}
 
-	/* Demo 2 */
-	#demo-2 input[type=search] {
-		width: 15px;
-		padding-left: 10px;
-		color: transparent;
-		cursor: pointer;
-	}
-	#demo-2 input[type=search]:hover {
-		background-color: #fff;
-	}
-	#demo-2 input[type=search]:focus {
-		width: 130px;
-		padding-left: 32px;
-		color: #000;
-		background-color: #fff;
-		cursor: auto;
-	}
-	#demo-2 input:-moz-placeholder {
-		color: transparent;
-	}
-	#demo-2 input::-webkit-input-placeholder {
-		color: transparent;
-	}
-
+	
 
 
 
@@ -1146,3 +982,148 @@ body{
 
 /*  CSS for Products Details Page  */
 
+/* CSS for cart Page */
+
+
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+  table#cart tbody td .form-control {
+    width: 20%;
+    display: inline !important;
+  }
+  .actions .btn {
+    width: 36%;
+    margin: 1.5em 0;
+  }
+  .actions .btn-info {
+    float: left;
+  }
+  .actions .btn-danger {
+    float: right;
+  }
+  table#cart thead {
+    display: none;
+  }
+  table#cart tbody td {
+    display: block;
+    padding: .6rem;
+    min-width: 320px;
+  }
+  table#cart tbody tr td:first-child {
+    background: #333;
+    color: #fff;
+  }
+  table#cart tbody td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: inline-block;
+    width: 8rem;
+  }
+  table#cart tfoot td {
+    display: block;
+  }
+  table#cart tfoot td .btn {
+    display: block;
+  }
+}
+
+
+
+
+
+
+/*    CSS for Cart page        */
+
+
+
+.text-navy {
+    color: #1ab394;
+}
+.cart-product-imitation {
+  text-align: center;
+  
+  height: 80px;
+  width: 80px;
+  background-color: #f8f8f9;
+}
+.product-imitation.xl {
+  padding: 120px 0;
+}
+.product-desc {
+  padding: 20px;
+  position: relative;
+}
+.ecommerce .tag-list {
+  padding: 0;
+}
+.ecommerce .fa-star {
+  color: #d1dade;
+}
+.ecommerce .fa-star.active {
+  color: #f8ac59;
+}
+.ecommerce .note-editor {
+  border: 1px solid #e7eaec;
+}
+table.shoping-cart-table {
+  margin-bottom: 0;
+}
+table.shoping-cart-table tr td {
+  border: none;
+  text-align: right;
+}
+table.shoping-cart-table tr td.desc,
+table.shoping-cart-table tr td:first-child {
+  text-align: left;
+}
+table.shoping-cart-table tr td:last-child {
+  width: 80px;
+}
+.ibox {
+  clear: both;
+  margin-bottom: 25px;
+  margin-top: 0;
+  padding: 0;
+}
+.ibox.collapsed .ibox-content {
+  display: none;
+}
+.ibox:after,
+.ibox:before {
+  display: table;
+}
+.ibox-title {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #ffffff;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 3px 0 0;
+  color: inherit;
+  margin-bottom: 0;
+  padding: 14px 15px 7px;
+  min-height: 48px;
+}
+.ibox-content {
+  background-color: #ffffff;
+  color: inherit;
+  padding: 15px 20px 20px 20px;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 1px 0;
+}
+.ibox-footer {
+  color: inherit;
+  border-top: 1px solid #e7eaec;
+  font-size: 90%;
+  background: #ffffff;
+  padding: 10px 15px;
+}
